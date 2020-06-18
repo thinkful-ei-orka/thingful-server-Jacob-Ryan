@@ -8,12 +8,12 @@ TRUNCATE
 
 INSERT INTO thingful_users (user_name, full_name, nickname, password)
 VALUES
-  ('dunder', 'Dunder Mifflin', null, 'password'),
-  ('b.deboop', 'Bodeep Deboop', 'Bo', 'bo-password'),
-  ('c.bloggs', 'Charlie Bloggs', 'Charlie', 'charlie-password'),
-  ('s.smith', 'Sam Smith', 'Sam', 'sam-password'),
-  ('lexlor', 'Alex Taylor', 'Lex', 'lex-password'),
-  ('wippy', 'Ping Won In', 'Ping', 'ping-password');
+  ('dunder', 'Dunder Mifflin', null, '$2a$12$BWsdT.ntk6ec8LVLZhySmudQach3WJOaD9sG9LI.nLOf4F.A.5EKK'),
+  ('b.deboop', 'Bodeep Deboop', 'Bo', '$2a$12$gEM4c09iHdgOGB.iid2rAOBQlFAIY8nmC0Ie2EO.IMRgRTAyDpEPm'),
+  ('c.bloggs', 'Charlie Bloggs', 'Charlie', '$2a$12$T.EmSG0D4yQkNoxzCjFHwuY0X4M0uUEFLJSFZ5eF5IqT1mX.D6zxm'),
+  ('s.smith', 'Sam Smith', 'Sam', '$2a$12$PJxIavaDFC94YWbYuLfPEuh2FZWCb.zXCI/0mrdH8PR6Q0QmsYXF2'),
+  ('lexlor', 'Alex Taylor', 'Lex', '$2a$12$lYnG0qEmH15pHmjzEozOuOto3o2buT448fF2i5lb8A5xVxle2Cb86'),
+  ('wippy', 'Ping Won In', 'Ping', '$2a$12$5PfAiKsJVUG5UzdEVilmFu3.DnFzlDonPJfIKIj23xQcDDcdsZfFa');
 
 INSERT INTO thingful_things (title, image, user_id, content)
 VALUES
@@ -157,11 +157,6 @@ INSERT INTO thingful_reviews (
 
 COMMIT;
 
-
--- Transaction occurs when the user interacts with the table.
--- Normally when operating on a database, you don't have the choice to control when the transactions occur.  
-
--- You can form any number of transactions in the database in between the time you begin the transaction and when you commit the transaction. 
 
 
 

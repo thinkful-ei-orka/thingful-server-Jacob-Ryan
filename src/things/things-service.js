@@ -33,6 +33,7 @@ const ThingsService = {
   },
 
   getById(db, id) {
+    console.log('here is the id',id)
     return ThingsService.getAllThings(db)
       .where('thg.id', id)
       .first()
