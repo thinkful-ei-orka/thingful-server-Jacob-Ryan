@@ -156,3 +156,12 @@ INSERT INTO thingful_reviews (
   );
 
 COMMIT;
+
+
+-- Transaction occurs when the user interacts with the table.
+-- Normally when operating on a database, you don't have the choice to control when the transactions occur.  
+
+-- You can form any number of transactions in the database in between the time you begin the transaction and when you commit the transaction. 
+
+
+

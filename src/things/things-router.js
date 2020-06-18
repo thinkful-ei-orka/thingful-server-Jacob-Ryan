@@ -35,6 +35,9 @@ thingsRouter.route('/:thing_id/reviews/')
 
 /* async/await syntax for promises */
 async function checkThingExists(req, res, next) {
+  //async returns the result of the function as a promise.
+  //await pauses the execution of the function until the function resolves to a value.
+  //so putting these two together, we can share resolved values between multiple steps in the promise chain.  
   try {
     const thing = await ThingsService.getById(
       req.app.get('db'),
